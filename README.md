@@ -62,10 +62,6 @@ href="https://www.php.net" target="_blank"> <img src="https://raw.githubusercont
 ```diff
 const express = require('express');
 const server = express();
-const myDate = new Date();
-const nextDayOfMonth = myDate.getDate();
-myDate.setDate(nextDayOfMonth);
-const newDate = myDate.toLocaleString();
 server.all('/', (req, res)=>{
    res.setHeader('Content-Type', 'text/html');
    res.write('<link href="https://fonts.googleapis.com/css?family=Roboto Condensed" rel="stylesheet"> <style> body {font-family: "Roboto Condensed";font-size: 22px;} <p>Hosting Active</p>');
@@ -73,7 +69,7 @@ server.all('/', (req, res)=>{
 })
 
 function keepAlive(){
-   server.listen(3000, ()=>{console.log(`[ '${newDate}' ] Đã kích hoạt online 24/24 ! | Admin: Hùng Channels#0669`)});
+   server.listen(3000, ()=>{console.log(`Đã kích hoạt online 24/24 ! | Admin: Hùng Channels#0669`)});
 }
 
 module.exports = keepAlive;
