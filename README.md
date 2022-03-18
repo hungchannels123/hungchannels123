@@ -62,17 +62,17 @@ href="https://www.php.net" target="_blank"> <img src="https://raw.githubusercont
 ```diff
 const express = require('express');
 const server = express();
-server.all('/', (req, res)=>{
+server.all('/', (req, res) => {
    res.setHeader('Content-Type', 'text/html');
    res.write('<link href="https://fonts.googleapis.com/css?family=Roboto Condensed" rel="stylesheet"> <style> body {font-family: "Roboto Condensed";font-size: 22px;} <p>Hosting Active</p>');
    res.end();
 })
 
-function keepAlive(){
-   server.listen(3000, ()=>{console.log(`Đã kích hoạt online 24/24 ! | Admin: Hùng Channels#0669`)});
+async function keepAlive() {
+   server.listen(3000, () => { console.log(`[KEEPALIVE] Đã kích hoạt online 24/24 | Admin: Hùng Channels#0669`) });
 }
 
-module.exports = keepAlive;
+module.exports = keepAlive
 ```
 - 👍 Vào file **index.js** thêm đoạn code này vào
 
