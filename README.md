@@ -69,7 +69,6 @@ server.all('/', (req, res) => {
 })
 
 async function keepAlive() {
-    const HungChannels = await client.users.fetch(ownerid);
     server.listen(3000, () => { console.log(`Đã kích hoạt online 24/24`) });
 }
 
