@@ -62,11 +62,7 @@ href="https://www.php.net" target="_blank"> <img src="https://raw.githubusercont
 ```diff
 const express = require('express');
 const server = express();
-server.all('/', (req, res) => {
-    res.setHeader('Content-Type', 'text/html');
-    res.write();
-    res.end();
-})
+server.all('/', (req, res) => {});
 
 async function keepAlive() {
     server.listen(3000, () => { console.log(`Đã kích hoạt online 24/24`) });
