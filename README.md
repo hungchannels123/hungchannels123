@@ -9,90 +9,6 @@ href="https://developer.android.com" target="_blank"> <img src="https://raw.gith
 href="https://www.php.net" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://github.com/puppeteer/puppeteer" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg" alt="puppeteer" width="40" height="40"/> </a> </p>
 
 
-<h1>HƯỚNG DẪN CÁCH CÀI ĐẶT BOT DISCORD TRÊN CÁC NỀN TẢNG</h1>
-
-> :warning: **TRƯỚC KHI CHẠY BOT CÁC BẠN PHẢI CHẤP NHẬN VIỆC ACC DISCORD BỊ QUÉT VÀ DIE, MỌI KHIẾU NẠI VỀ ACC DISCORD BÊN MÌNH KHÔNG CHỊU TRÁCH NHIỆM**
-
-<h1>Đối với Windows/VPS</h1> 
-
-**Công cụ cần chuẩn bị cài đặt**
-
-- 👍 **[Nodejs](https://nodejs.org/en/)**
-- 👍 **[Python](https://www.python.org/)** - **không thiết yếu**
-- 👍 **Download zip** ở các link ở trên về máy rồi **giải nén** ra hoặc sử dụng: **git clone [link github]**
-- 👍 Vào thư mục **đã giải nén** hoặc **đã git clone** ở phía trên
-- 👍 **Click vào thanh địa chỉ đường dẫn tại đó** và gõ: **cmd** để mở Command Prompt trên máy tính của bạn**
-
-**Cách cài đặt - gõ từng lệnh theo thứ tự dưới đây và đợi cài đặt**
-
-- 👍 **npm install windows-build-tools**
-- 👍 **npm install** - đợi khoảng 3-5p tùy theo tốc độ mạng
-- 👍 **npm audit fix**
-- 👍 **npm start** - đợi khoảng 3-5p tùy theo tốc độ mạng
-- 👍 **Lưu Ý: Khi cài đặt xong phải tắt đi và khởi động lại để tránh gặp lỗi không mong muốn.**
-
-<h1>Đối với Replit - Dùng trên ĐT hoặc PC</h1> 
-
-**Công cụ cần chuẩn cài đặt**
-
-- 👍 **Một tài khoản trên [Replit](https://replit.com/)**
-
-**Thứ tự các thao tác trên [Replit](https://replit.com/)**
-
-- 👍 **+ New repl**
-- 👍 Qua tab **Import from github**
-- 👍 Nhập link **github** vào **from** và **click** vào nút **Import from github**
-- 👍 Đợi repl **Cloning**
-- 👍 Chọn **select language** là **Bash** và **configure the run button** là **npm start** xong rồi ấn **done**
-- 👍 Đợi tầm 10s nếu không tự **refesh trang thì refesh thủ công bằng phím F5 hoặc nút refesh trên thanh địa chỉ**
-
-**Cách cài đặt - gõ từng lệnh theo thứ tự dưới đây và đợi cài đặt**
-
-- 👍 Chuyển qua tab **console** và gõ các lệnh theo thứ tự sau:
-- 👍 **npm install** - đợi khoảng 3-5p tùy theo tốc độ mạng
-- 👍 **npm audit fix**
-- 👍 **Ấn nút run trên màn hình** - đợi khoảng 3-5p tùy theo tốc độ mạng
-- 👍 **Lưu Ý: Khi cài đặt xong phải tắt đi và khởi động lại để tránh gặp lỗi không mong muốn.**
-
-**Cách cài đặt treo 24/24 trên uptimerobot**
-
-- 👍 Vào file bot của bạn thêm file **server.js**
-- 👍 Thêm đoạn code sau vào file **server.js**
-
-```diff
-const express = require('express');
-const server = express();
-server.all('/', (req, res) => {});
-
-async function keepAlive() {
-    server.listen(3000, () => { console.log(`Đã kích hoạt online 24/24`) });
-}
-
-module.exports = keepAlive;
-```
-- 👍 Vào file **index.js** thêm đoạn code này vào
-
-```diff
-const keepAlive = require('./server');
-keepAlive();
-```
-
-- 👍 **npm install express**
-- 👍 **npm audit fix**
-- 👍 **Ấn nút run trên màn hình** - đợi khoảng 3-5p tùy theo tốc độ mạng
-- 👍 **Copy link** ở trang replit. Link có định dạng **https://hungchannels-main.nameuser.repl.co**
-- 👍 **Tạo tài khoản trên trang [UptimeRobot](https://uptimerobot.com/)**
-
-**Thứ tự các thao tác trên [UptimeRobot](https://uptimerobot.com/)**
-
-
-- 👍 **+  Add New Monitor**
-- 👍 **Monitor Type** chọn **HTTP(s)**
-- 👍 **Friendly Name** đặt tùy ý
-- 👍 **URL (or IP)**: Dán link vừa copy bên **[Replit](https://replit.com/)** 
-- 👍 Ấn **tick** vào ô  **Select "Alert Contacts To Notify** (nhận thông báo từ email)
-- 👍 Ấn **Create Monitor** để hoàn thành quá trình tạo **uptime**
-
 # Github Stats
 
 <img src="https://github-readme-stats.vercel.app/api?username=hungchannels123&include_all_commits=true&count_private=true&show_icons=true&custom_title=hungchannels123&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40" alt = "Github Stats" >
@@ -108,5 +24,5 @@ keepAlive();
 &nbsp; <a href="tiktok.com/@hungchannels" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/search" width="100" /></a>    
 &nbsp; <a href="http://github.com/hungchannels123" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/github.png" width="100" /></a>
 &nbsp; <a href="https://www.facebook.com/HungChannels.TV" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/facebook.png"  width="100" /></a>
-&nbsp; <a href="mailto:HungChannels.TV" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="100" /></a>
+&nbsp; <a href="mailto:phihungphung90@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="100" /></a>
 </p>
